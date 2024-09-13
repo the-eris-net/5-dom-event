@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Event Flow Example</title>
+</head>
+<body>
+    <a href="https://www.google.com">go google</a>
+    <script>
+        const a = document.querySelector('a')
+        a.addEventListener('click', function (event) {
+            event.preventDefault();
+        })
+    </script>
+</body>
+</html>
